@@ -2,7 +2,6 @@
 <!--Last modified 11/20/18-->
 <!--Skills with rank 5 roll the dice, but don't return or display results.-->
 <!--Bug reported at https://app.roll20.net/forum/post/6980237/dice-roll-bug-in-group-rolls-when-dice-equals-0/?pageforid=6980237#post-6980237-->
-<!--Deny and Gel are broken.-->
 <!--Follow progress at https://app.roll20.net/forum/post/6979031/calling-successes-and-botches-from-a-sum-roll/?pageforid=6980196#post-6980196-->
 
 
@@ -49,7 +48,7 @@
 		<p>Rush <input type="number" name="attr_Rush" value='1' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Rush}d10cs>6cf<1sd}>6f1 + {(5-@{Rush})d6cs>6cf<1sd}>6f1' name='roll_RushCheck'></button></p>
 		<p>Sneak <input type="number" name="attr_Sneak" value='1'max="5" min="1"  />&nbsp;<button type='roll' value='/roll {@{Sneak}d10cs>6cf<1sd}>6f1 + {(5-@{Sneak})d6cs>6cf<1sd}>6f1' name='roll_SneakCheck'></button></p>
 		<p>Fade <input type="number" name="attr_Fade" value='1' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Fade}d10cs>6cf<1sd}>6f1 + {(5-@{Fade})d6cs>6cf<1sd}>6f1' name='roll_FadeCheck'></button></p>
-		<!--Broken--><p>Deny <input type="number" name="attr_STAT8" value='1' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{STAT8}d10cs>6cf<1sd}>6f1 + {(5-@{STAT8})d6cs>6cf<1sd}>6f1' name='roll_STAT8Check'></button></p>
+		<p>Deny <input type="number" name="attr_STAT8" value='1' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{STAT8}d10cs>6cf<1sd}>6f1 + {(5-@{STAT8})d6cs>6cf<1sd}>6f1' name='roll_STAT8Check'></button></p>
 	
 	</div>
 
@@ -58,7 +57,7 @@
 		<p><strong>Intrigue</strong></p>
 		<p>Confront <input type="number" name="attr_Confront" value='1' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Confront}d10cs>6cf<1sd}>6f1 + {(5-@{Confront})d6cs>6cf<1sd}>6f1' name='roll_ConfrontCheck'></button></p>
 		<p>Snoop <input type="number" name="attr_Snoop" value='1' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Snoop}d10cs>6cf<1sd}>6f1 + {(5-@{Snoop})d6cs>6cf<1sd}>6f1' name='roll_SnoopCheck'></button></p>
-		<!--Broken--><p>Gel <input type="number" name="attr_STAT11" value='1' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{STAT11}d10cs>6cf<1sd}>6f1 + {(5-@{STAT11})d6cs>6cf<1sd}>6f1' name='roll_STAT11Check'></button></p>
+		<p>Gel <input type="number" name="attr_STAT11" value='1' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{STAT11}d10cs>6cf<1sd}>6f1 + {(5-@{STAT11})d6cs>6cf<1sd}>6f1' name='roll_STAT11Check'></button></p>
 		<p>Support <input type="number" name="attr_Support" value='1' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Support}d10cs>6cf<1sd}>6f1 + {(5-@{Support})d6cs>6cf<1sd}>6f1' name='roll_SupportCheck'></button></p>
 	
 	</div>
