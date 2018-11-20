@@ -1,6 +1,7 @@
 <!--Changelog-->
 <!--Last modified 11/20/18-->
 <!--Skills with rank 5 roll the dice, but don't return or display results.-->
+<!--Bug reported at https://app.roll20.net/forum/post/6980237/dice-roll-bug-in-group-rolls-when-dice-equals-0/?pageforid=6980237#post-6980237-->
 <!--Deny and Gel are broken.-->
 <!--Follow progress at https://app.roll20.net/forum/post/6979031/calling-successes-and-botches-from-a-sum-roll/?pageforid=6980196#post-6980196-->
 
@@ -35,30 +36,30 @@
 	<div class="col" id="combat">
 	
 		<p><strong>Combat</strong></p>
-		<p>Storm <input type="number" name="attr_Storm" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Storm}d10cs>6cf<1sd}>6 + {(5-@{Storm})d6cs>6cf<1sd}>6f1' name='roll_StormCheck'></button></p>
-		<p>Flank <input type="number" name="attr_Flank" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Flank}d10cs>6cf<1sd}>6 + {(5-@{Flank})d6cs>6cf<1sd}>6f1' name='roll_FlankCheck'></button></p>
-		<p>Regroup <input type="number" name="attr_Regroup" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Regroup}d10cs>6cf<1sd}>6 + {(5-@{Regroup})d6cs>6cf<1sd}>6f1' name='roll_RegroupCheck'></button></p>
-		<p>Suppress <input type="number" name="attr_Suppress" value=''max="5" min="1"  />&nbsp;<button type='roll' value='/roll {@{Suppress}d10cs>6cf<1sd}>6 + {(5-@{Suppress})d6cs>6cf<1sd}>6f1' name='roll_SuppressCheck'></button></p>
+		<p>Storm <input type="number" name="attr_Storm" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Storm}d10cs>6cf<1sd}>6f1 + {(5-@{Storm})d6cs>6cf<1sd}>6f1' name='roll_StormCheck'></button></p>
+		<p>Flank <input type="number" name="attr_Flank" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Flank}d10cs>6cf<1sd}>6f1 + {(5-@{Flank})d6cs>6cf<1sd}>6f1' name='roll_FlankCheck'></button></p>
+		<p>Regroup <input type="number" name="attr_Regroup" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Regroup}d10cs>6cf<1sd}>6f1 + {(5-@{Regroup})d6cs>6cf<1sd}>6f1' name='roll_RegroupCheck'></button></p>
+		<p>Suppress <input type="number" name="attr_Suppress" value=''max="5" min="1"  />&nbsp;<button type='roll' value='/roll {@{Suppress}d10cs>6cf<1sd}>6f1 + {(5-@{Suppress})d6cs>6cf<1sd}>6f1' name='roll_SuppressCheck'></button></p>
 	
 	</div>
 
 	<div class="col" id="evasion">
 	
 		<p><strong>Evasion</strong></p>
-		<p>Rush <input type="number" name="attr_Rush" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Rush}d10cs>6cf<1sd}>6 + {(5-@{Rush})d6cs>6cf<1sd}>6f1' name='roll_RushCheck'></button></p>
-		<p>Sneak <input type="number" name="attr_Sneak" value=''max="5" min="1"  />&nbsp;<button type='roll' value='/roll {@{Sneak}d10cs>6cf<1sd}>6 + {(5-@{Sneak})d6cs>6cf<1sd}>6f1' name='roll_SneakCheck'></button></p>
-		<p>Fade <input type="number" name="attr_Fade" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Fade}d10cs>6cf<1sd}>6 + {(5-@{Fade})d6cs>6cf<1sd}>6f1' name='roll_FadeCheck'></button></p>
-		<!--Broken--><p>Deny <input type="number" name="attr_Deny" value='' max="5" min="1" />&nbsp;<button type='roll' vvalue='/roll {@{Deny}d10cs>6cf<1sd}>6 + {(5-@{Deny})d6cs>6cf<1sd}>6f1' name='roll_DenyCheck'></button></p>
+		<p>Rush <input type="number" name="attr_Rush" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Rush}d10cs>6cf<1sd}>6f1 + {(5-@{Rush})d6cs>6cf<1sd}>6f1' name='roll_RushCheck'></button></p>
+		<p>Sneak <input type="number" name="attr_Sneak" value=''max="5" min="1"  />&nbsp;<button type='roll' value='/roll {@{Sneak}d10cs>6cf<1sd}>6f1 + {(5-@{Sneak})d6cs>6cf<1sd}>6f1' name='roll_SneakCheck'></button></p>
+		<p>Fade <input type="number" name="attr_Fade" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Fade}d10cs>6cf<1sd}>6f1 + {(5-@{Fade})d6cs>6cf<1sd}>6f1' name='roll_FadeCheck'></button></p>
+		<!--Broken--><p>Deny <input type="number" name="attr_Deny" value='' max="5" min="1" />&nbsp;<button type='roll' vvalue='/roll {@{Deny}d10cs>6cf<1sd}>6f1 + {(5-@{Deny})d6cs>6cf<1sd}>6f1' name='roll_DenyCheck'></button></p>
 	
 	</div>
 
 	<div class="col" id="intrigue">
 	
 		<p><strong>Intrigue</strong></p>
-		<p>Confront <input type="number" name="attr_Confront" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Confront}d10cs>6cf<1sd}>6 + {(5-@{Confront})d6cs>6cf<1sd}>6f1' name='roll_ConfrontCheck'></button></p>
-		<p>Snoop <input type="number" name="attr_Snoop" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Snoop}d10cs>6cf<1sd}>6 + {(5-@{Snoop})d6cs>6cf<1sd}>6f1' name='roll_SnoopCheck'></button></p>
-		<!--Broken--><p>Gel <input type="number" name="attr_Gel" value='' max="5" min="1" />&nbsp;<button type='roll' vvalue='/roll {@{Gel}d10cs>6cf<1sd}>6 + {(5-@{Gel})d6cs>6cf<1sd}>6f1' name='roll_GelCheck'></button></p>
-		<p>Support <input type="number" name="attr_Support" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Support}d10cs>6cf<1sd}>6 + {(5-@{Support})d6cs>6cf<1sd}>6f1' name='roll_SupportCheck'></button></p>
+		<p>Confront <input type="number" name="attr_Confront" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Confront}d10cs>6cf<1sd}>6f1 + {(5-@{Confront})d6cs>6cf<1sd}>6f1' name='roll_ConfrontCheck'></button></p>
+		<p>Snoop <input type="number" name="attr_Snoop" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Snoop}d10cs>6cf<1sd}>6f1 + {(5-@{Snoop})d6cs>6cf<1sd}>6f1' name='roll_SnoopCheck'></button></p>
+		<!--Broken--><p>Gel <input type="number" name="attr_Gel" value='' max="5" min="1" />&nbsp;<button type='roll' vvalue='/roll {@{Gel}d10cs>6cf<1sd}>6f1 + {(5-@{Gel})d6cs>6cf<1sd}>6f1' name='roll_GelCheck'></button></p>
+		<p>Support <input type="number" name="attr_Support" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Support}d10cs>6cf<1sd}>6f1 + {(5-@{Support})d6cs>6cf<1sd}>6f1' name='roll_SupportCheck'></button></p>
 	
 	</div>
 	
