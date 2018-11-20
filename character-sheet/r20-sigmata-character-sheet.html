@@ -1,0 +1,104 @@
+<!--Last modified 11/20/18-->
+<!--Skills with rank 5 roll the dice, but don't return or display results.-->
+<!--Deny and Gel are broken.-->
+<!--Follow progress at https://app.roll20.net/forum/post/6979031/calling-successes-and-botches-from-a-sum-roll/?pageforid=6980196#post-6980196-->
+
+<div class="char-name">
+	<span><strong>Receiver handle:</strong>&nbsp;<input type="text" name="attr_character_handle" /></span>
+	<span><strong>Receiver name:</strong>&nbsp;<input type="text" name="attr_character_name" /></span></p></span>
+	<span><strong>SIGMATA:TSKF</strong></span>
+</div>
+
+<div class="char-description">
+	<span><strong>Surface:</strong>&nbsp;<input type="text" name="attr_character_surface"  /></span>
+	<span><strong>Story:</strong>&nbsp;<input type="text" name="attr_character_story"  /></span></p></span>
+</div>
+
+<div class="4colrow">
+	
+	<div class="col" id="cores">
+	
+		<p><strong>Cores</strong></p>
+		<p>Agression&nbsp;<input type="number" name="attr_Aggression" value='' width="20px" height="20px"/></p>
+		<p>Guile&nbsp;<input type="number" name="attr_Guile" value='' /></p>
+		<p>Judgement&nbsp;<input type="number" name="attr_Judgement" value='' /></p>
+		<p>Valor&nbsp;<input type="number" name="attr_Valor" value='' /></p>
+	
+	</div>
+
+	<div class="col" id="combat">
+	
+		<p><strong>Combat</strong></p>
+		<p>Storm <input type="number" name="attr_Storm" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Storm}d10cs>6cf<1sd}>6 + {(5-@{Storm})d6cs>6cf<1sd}>6f1' name='roll_StormCheck'></button></p>
+		<p>Flank <input type="number" name="attr_Flank" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Flank}d10cs>6cf<1sd}>6 + {(5-@{Flank})d6cs>6cf<1sd}>6f1' name='roll_FlankCheck'></button></p>
+		<p>Regroup <input type="number" name="attr_Regroup" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Regroup}d10cs>6cf<1sd}>6 + {(5-@{Regroup})d6cs>6cf<1sd}>6f1' name='roll_RegroupCheck'></button></p>
+		<p>Suppress <input type="number" name="attr_Suppress" value=''max="5" min="1"  />&nbsp;<button type='roll' value='/roll {@{Suppress}d10cs>6cf<1sd}>6 + {(5-@{Suppress})d6cs>6cf<1sd}>6f1' name='roll_SuppressCheck'></button></p>
+	
+	</div>
+
+	<div class="col" id="evasion">
+	
+		<p><strong>Evasion</strong></p>
+		<p>Rush <input type="number" name="attr_Rush" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Rush}d10cs>6cf<1sd}>6 + {(5-@{Rush})d6cs>6cf<1sd}>6f1' name='roll_RushCheck'></button></p>
+		<p>Sneak <input type="number" name="attr_Sneak" value=''max="5" min="1"  />&nbsp;<button type='roll' value='/roll {@{Sneak}d10cs>6cf<1sd}>6 + {(5-@{Sneak})d6cs>6cf<1sd}>6f1' name='roll_SneakCheck'></button></p>
+		<p>Fade <input type="number" name="attr_Fade" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Fade}d10cs>6cf<1sd}>6 + {(5-@{Fade})d6cs>6cf<1sd}>6f1' name='roll_FadeCheck'></button></p>
+		<p>Deny <input type="number" name="attr_Deny" value='' max="5" min="1" />&nbsp;<button type='roll' vvalue='/roll {@{Deny}d10cs>6cf<1sd}>6 + {(5-@{Deny})d6cs>6cf<1sd}>6f1' name='roll_DenyCheck'></button></p>
+	
+	</div>
+
+	<div class="col" id="intrigue">
+	
+		<p><strong>Intrigue</strong></p>
+		<p>Confront <input type="number" name="attr_Confront" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Confront}d10cs>6cf<1sd}>6 + {(5-@{Confront})d6cs>6cf<1sd}>6f1' name='roll_ConfrontCheck'></button></p>
+		<p>Snoop <input type="number" name="attr_Snoop" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Snoop}d10cs>6cf<1sd}>6 + {(5-@{Snoop})d6cs>6cf<1sd}>6f1' name='roll_SnoopCheck'></button></p>
+		<p>Gel <input type="number" name="attr_Gel" value='' max="5" min="1" />&nbsp;<button type='roll' vvalue='/roll {@{Gel}d10cs>6cf<1sd}>6 + {(5-@{Gel})d6cs>6cf<1sd}>6f1' name='roll_GelCheck'></button></p>
+		<p>Support <input type="number" name="attr_Support" value='' max="5" min="1" />&nbsp;<button type='roll' value='/roll {@{Support}d10cs>6cf<1sd}>6 + {(5-@{Support})d6cs>6cf<1sd}>6f1' name='roll_SupportCheck'></button></p>
+	
+	</div>
+	
+</div>
+	
+<div class="3colrow">
+		
+	<div class="col" id="blades &amp; memories &amp; libraries &amp; ups">
+		
+		<p><strong>Blades</strong></p>
+		<p>Blade 1:&nbsp;<input type="text" name="blade_one" value="Name" /></p>
+		<p>Blade 2:&nbsp;<input type="text" name="blade_two" value="Name" /></p>
+		<p>Blade 3:&nbsp;<input type="text" name="blade_three" value="Name" /></p>
+		<p>Blade 4:&nbsp;<input type="text" name="blade_four" value="Name" /></p>
+		<!--<p>Blade 5:&nbsp;<input type="text" name="blade_five" value="Name" /></p>-->
+		<p><strong>Memory:</strong>&nbsp;<input type="text" name="memory_one" value='Name (processor)' /></p>
+		<p><strong>Library:</strong>&nbsp;<input type="text" name="library_one" value='Name (scene)' /></p>
+		<p><strong>UPs</strong>&nbsp;<input type="number" name="ups" value='0' /></p>
+		
+		
+	</div>
+	
+	<div class="col" id="peripherals">
+		
+		<p><strong>Peripherals</strong></p>
+		<p>Peripheral 1 (skill):&nbsp;<input type="text" name="peripheral_one" value='Name (skill)' /><br>Edge&nbsp;<input type='checkbox' name='peripheral_one_edge'   />&nbsp;Break&nbsp;<input type='checkbox' name='peripheral_one_break'   /></p>
+		
+		<p>Peripheral 2 (skill):&nbsp;<input type="text" name="peripheral_two" value='Name (skill)' /><br>Edge&nbsp;<input type='checkbox' name='peripheral_two_edge'   />&nbsp;Break&nbsp;<input type='checkbox' name='peripheral_two_break'   /></p></p>
+		
+		<p>Peripheral 3 (skill):&nbsp;<input type="text" name="peripheral_three" value='Name (skill)' /><br>Edge&nbsp;<input type='checkbox' name='peripheral_three_edge'   />&nbsp;Break&nbsp;<input type='checkbox' name='peripheral_three_break'   /></p></p>
+		
+		<p>Peripheral 4 (skill):&nbsp;<input type="text" name="peripheral_four" value='Name (skill)' /><br>Edge&nbsp;<input type='checkbox' name='peripheral_four_edge'   />&nbsp;Break&nbsp;<input type='checkbox' name='peripheral_four_break'   /></p></p>
+		
+		<!--<p>Peripheral 5 (skill):&nbsp;<input type="text" name="peripheral_five" value='Name (skill)' /><br>Edge&nbsp;<input type='checkbox' name='peripheral_five_edge'   />&nbsp;Break&nbsp;<input type='checkbox' name='peripheral_five_break'   /></p>-->
+		
+	</div>
+	
+	<div class="col" id=" &amp; UPs">
+		
+		<p><strong>Subroutines</strong></p>			
+		<p>Subroutine 1 (rank):&nbsp;<input type="text" name="subroutine_one" value="Name (rank)" /></p>
+		<p>Subroutine 2 (rank):&nbsp;<input type="text" name="subroutine_two" value="Name (rank)" /></p>
+		<p>Subroutine 3 (rank):&nbsp;<input type="text" name="subroutine_three" value="Name (rank)" /></p>
+		<p>Subroutine 4 (rank):&nbsp;<input type="text" name="subroutine_four" value="Name (rank)" /></p>
+		<!--<p>Subroutine 5 (rank):&nbsp;<input type="text" name="subroutine_five" value="Name (rank)" /></p>-->
+		<p>Ultimate subroutine:&nbsp;<input type="text" name="ultimate_subroutine" value="Name (5)" /></p>
+	</div>
+
+</div>
