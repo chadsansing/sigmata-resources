@@ -1,0 +1,28 @@
+.charsheet {
+    background-color: white;
+    min-width:800px;
+}
+
+div {
+    padding-bottom:20px;
+}
+
+span {
+    padding-right:20px;
+}
+
+input[type='text'] {
+    width: 200px;
+}
+
+col {
+    padding-right: 20px;
+}
+
+strong {
+    color:#000;
+}
+
+p {
+    color:#777;
+}
